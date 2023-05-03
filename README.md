@@ -1,15 +1,14 @@
-# AI CDRs Analysis
+## AI CDRs Analysis :bar_chart:
 
-This code repository is designed to identify unusual patterns in call data. It can help identify unexpected spikes in call volume or unusually long call durations, which could be indicators of fraudulent or suspicious activity.
+📈 This code repository is designed to identify unusual patterns in call data. It can help identify unexpected spikes in call volume or unusually long call durations, which could be indicators of fraudulent or suspicious activity.
 
-The code works by loading call records data file and preprocessing it for anomaly detection using KMeans clustering. The data is split into numerical, categorical, and time features. The numerical features are standardized, the categorical features are one-hot encoded, and the time feature is converted to numeric values. The preprocessed data is then concatenated and used to train a KMeans clustering model. The clusters are used to identify anomalies as data points in small clusters, and the anomalies are printed out.
+🤖 The code works by loading call records data file and preprocessing it for anomaly detection using KMeans clustering. The data is split into numerical, categorical, and time features. The numerical features are standardized, the categorical features are one-hot encoded, and the time feature is converted to numeric values. The preprocessed data is then concatenated and used to train a KMeans clustering model. The clusters are used to identify anomalies as data points in small clusters, and the anomalies are printed out.
 
-This repository is helpful for individuals or organizations looking to improve the security and reliability of their telecommunication services by detecting unusual patterns in call data.
+🔍 This repository is helpful for individuals or organizations looking to improve the security and reliability of their telecommunication services by detecting unusual patterns in call data.
 
+**Sample Output** :clipboard:
 
-**Sample Output**
-
-The output represents a table of call records data that has been preprocessed and analyzed for anomalies using the KMeans clustering algorithm. The table contains information about each call, such as the buyer, seller, route, duration, amount, country, setup time, connect time, disconnect time, and disconnect reason. Each row in the table represents a single call record, and each column represents a feature of that call. 
+The output represents a table of call records data that has been preprocessed and analyzed for anomalies using the KMeans clustering algorithm. The table contains information about each call, such as the buyer, seller, route, duration, amount, country, setup time, connect time, disconnect time, and disconnect reason. Each row in the table represents a single call record, and each column represents a feature of that call.
 
 The values in the table are numeric representations of the original data, which have been standardized and one-hot encoded as necessary. The special thing about this output is that it identifies any unusual patterns in call data, such as unexpected spikes in call volume or unusually long call durations, which could be indicators of fraudulent or suspicious activity. The anomalies are identified as data points that are in small clusters and are printed out in the last line of the code.
 
