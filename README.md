@@ -10,7 +10,7 @@
 
 The output represents a table of call records data that has been preprocessed and analyzed for anomalies using the KMeans clustering algorithm. The table contains information about each call, such as the buyer, seller, route, duration, amount, country, setup time, connect time, disconnect time, and disconnect reason. Each row in the table represents a single call record, and each column represents a feature of that call.
 
-The values in the table are numeric representations of the original data, which have been standardized and one-hot encoded as necessary. The special thing about this output is that it identifies any unusual patterns in call data, such as unexpected spikes in call volume or unusually long call durations, which could be indicators of fraudulent or suspicious activity. The anomalies are identified as data points that are in small clusters and are printed out in the last line of the code.
+
 
 ```shell
          Buyer    Seller      Route           CLD            CLI           Country  ... Seller Amount  System Amount        Setup Time      Connect Time   Disconnect Time     Disconnect Reason
@@ -28,3 +28,5 @@ The values in the table are numeric representations of the original data, which 
 
 
 ```
+
+The values in the table are numeric representations of the original data, which have been standardized and one-hot encoded as necessary. The special thing about this output is that it identifies any unusual patterns in call data, such as unexpected spikes in call volume or unusually long call durations, which could be indicators of fraudulent or suspicious activity. The anomalies are identified as data points that are in small clusters and are printed out in the last line of the code.
