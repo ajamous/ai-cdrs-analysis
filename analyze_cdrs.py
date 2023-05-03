@@ -4,13 +4,18 @@ from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 
+# Set display options to ensure that the duration column is not truncated
+pd.set_option('display.max_colwidth', None)
+
 # Load the call records data
 df = pd.read_csv("cdrs.csv")
 
+
+
 # Extract the relevant features for anomaly detection
-numeric_features = ["Duration", "Buyer Amount", "Seller Amount", "System Amount"]
+numeric_features = ["Billed Duration", "Buyer Amount"]
 categorical_features = ["Country", "Description", "Buyer", "Seller", "Route" ]
-time_feature = "Setup Time"
+time_feature = "Connect Time"
 
 X_numeric = df[numeric_features]
 X_categorical = df[categorical_features]
